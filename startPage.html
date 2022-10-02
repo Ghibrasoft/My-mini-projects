@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="startPage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="startPage.js" defer></script>
+
+    <title>Portfolio alternative</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <input type="checkbox" class="checkbox"/>
+        <ion-icon name="menu-outline" class="bar-icon"></ion-icon>
+        
+        <nav class="nav-list">
+            <ul class="nav-ul">
+                <li class="nav-li"><a href="#section-1" id="home" data-after="Home"><ion-icon name="home-outline" id="home" class="icon"></ion-icon></a></li>
+                <li class="nav-li"><a href="#section-2" id="edu" data-after="Education"><ion-icon name="book-outline" id="edu" class="icon"></ion-icon></a></li>
+                <li class="nav-li"><a href="#section-3" id="projects" data-after="Projects"><ion-icon name="extension-puzzle-outline" id="projects" class="icon"></ion-icon></a></li>
+                <li class="nav-li"><a href="#section-4" id="contact" data-after="Contact"><ion-icon name="chatbubbles-outline" id="contact" class="icon"></ion-icon></a></li>
+            </ul>
+        </nav>
+
+
+        
+        <section id="section-1" class="sec-1">
+            <div class="intro-div">
+                <h1 class="intro-div-h1">I'm David Ghibradze<span class="span-box-h1"></span></h1>
+                <p class="intro-div-p">Front end developer<span class="span-box-p"></span></p>
+            </div>
+        </section>
+
+        <section id="section-2" class="sec-2">
+            <div class="edu-div">
+                <h1 class="edu-h1">Education<span></span></h1>
+                <ul class="first-ul">
+                    <li>Akaki Tsereteli State University<span class="spn1"></span></li>
+                    <li>Computer sience<span class="spn2"></span></li>
+                    <li>Bachelor degree<span class="spn3"></span></li>
+                    <li>2011-15 years<span class="spn4"></span></li>
+                    <h3 class="edu-h3">Self-taught front-end developer :<span class="spn5"></span></h3>
+                    <li>HTML/CSS<span class="spn6"></span></li>
+                    <li>Javascript<span class="spn7"></span></li>
+                    <li>React<span class="spn8"></span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section-3" class="sec-3"></section>
+        
+        <section id="section-4" class="sec-4">
+            <form id="contact-form">
+                <div class="form-div">
+                    <div class="inp-div">
+                        <input 
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="inp-control"
+                        required
+                        />
+                        <label for="name" id="name-lab">Name</label>
+                    </div>
+                    <div class="inp-div">
+                        <input
+                        type="text"
+                        name="surname"
+                        id="surname"
+                        class="inp-control"
+                        required
+                        />
+                        <label for="surname" id="surname-lab">Surname</label>
+                    </div>
+                    <div class="inp-div">
+                        <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="inp-control"
+                        required
+                        />
+                        <label for="email" id="email-lab">Email</label>
+                    </div>
+
+                    <div class="inp-div">
+                        <textarea type="text" name="textarea" class="text-area" placeholder=" "></textarea>
+                        <label for="textarea" id="textarea-lab">Message me</label> 
+                    </div>
+
+                    <div class="inp-div submit-btn">
+                        <input
+                        type="submit"
+                        name="submit"
+                        id="submit"
+                        class="submit btn"
+                        value="Send"
+                        />
+                    </div>
+                </div>
+            </form>
+        </section>
+
+
+        <footer class="footer">
+                <div class="div-list">
+                    <ul>
+                        <li class="icon phone"><a class="contact-anchor">Call <ion-icon name="call-outline"></ion-icon></a></li>
+                        <li class="icon github"><a class="contact-anchor">Github <ion-icon name="logo-github"></ion-icon></a></li>
+                        <li class="icon linkedin"><a class="contact-anchor">Linkedin <ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+        </footer>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
