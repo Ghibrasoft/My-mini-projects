@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/5dc700b45c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Profile-survey.css">
+    <script src="Profile-survey-Jscript.js" defer></script>
+
+    <title>Transformation survey form</title>
+</head>
+
+<body>
+    <!-- HEADER AND NAVIGATION -->        
+    <div class="header-div">
+        <header id="header">
+            <a href="file:///D:/WEB_PROGRAMMING/Portfolio/images/fit-online.jpg">
+                <div class="logo">
+                    <img src="images/fit-online.jpg" alt="fitness online">
+                </div>
+            </a>
+            <nav id="nav-bar">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="file:///D:/WEB_PROGRAMMING/Bitcamping/PTraining%20online%20platform/about-me.html" target="_blank">About</a></li>
+                    <li><a class="nav-link" href="#contact" onclick="makeBorder()">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    
+    <!-- CONTAINER, SURVEY FORM -->
+    <div class="container">
+
+        <div class="form-title">
+            <h2>TransformYourBody survey</h2>
+            <p>Filling this blank is required</p>
+        </div>
+
+        <form class="survey-form" onsubmit="myFunc()">
+
+            <div class="input-text-group">
+                <div class="form-group-input">
+                    <input 
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="input-form-control"
+                    required
+                    />
+                    <label class="name-label" for="name">Your name</label>
+                </div>
+                <div class="form-group-input">
+                    <input 
+                    type="text"
+                    name="surname"
+                    id="surname"
+                    class="input-form-control"
+                    required
+                    />
+                    <label class="surname-label" for="surname">Your surname</label>
+                </div>
+                <div class="form-group-input">
+                    <input
+                    type="number"
+                    name="age"
+                    id="age"
+                    class="input-form-control"
+                    min="18"
+                    required
+                    />
+                    <label class="age-label" for="age">Your age</label>
+                </div>
+                <div class="form-group-input">
+                    <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="input-form-control"
+                    required
+                    />
+                    <label class="email-label" for="email">Your email</label>
+                </div>
+
+            </div>
+
+            <div class="radio-group">
+
+                <!-- Goal radio -->
+                <p class="radio-p">What is your goal?</p>
+                <div class="form-group-radio" id="goal-radio">
+                    
+                    <label class="gain-label" id="radio-label" for="mass-gain" oninput="bgClrFunc('goal-radio')">
+                        <img 
+                        src="https://res.cloudinary.com/drhg6wpcy/image/upload/c_fit,dpr_1.0,q_auto:eco,w_104/rocr3zr3qxficpt4v0an"
+                        />
+                        <input
+                        type="radio"
+                        name="toBe"
+                        id="mass-gain"
+                        class="radio-form-control"
+                        required
+                        /> Mass gain
+                    </label>
+                    <label class="gain-label" id="radio-label" for="lose-gain" oninput="bgClrFunc()">
+                        <img
+                        src="https://res.cloudinary.com/drhg6wpcy/image/upload/c_fit,dpr_1.0,q_auto:eco,w_104/kvsnos7xrh06ws04lcfe"
+                        />
+                        <input 
+                        type="radio"
+                        name="toBe"
+                        id="lose-gain"
+                        class="radio-form-control"
+                        /> Lose weight
+                    </label>
+                </div>
+
+                <!-- Bodytype radio -->
+                <p class="radio-p">Choose your current body type</p>
+                <div class="form-group-radio" id="body-type">
+                    
+                    <label class="bodytype-label" id="radio-label" for="ectomorph" oninput="bgClrFunc('body-type')">
+                        <img
+                        src="https://res.cloudinary.com/drhg6wpcy/image/upload/c_fit,dpr_1.0,q_auto:eco,w_104/sksug8tzutflkujw00ke"
+                        />
+                        <input
+                        type="radio"
+                        name="bodytype"
+                        id="ectomorph"
+                        class="radio-form-control"
+                        required
+                        /> Ectomorph
+                    </label>
+                    <label class="bodytype-label" id="radio-label" for="mezomorph" oninput="bgClrFunc('body-type')">
+                        <img
+                        src="https://res.cloudinary.com/drhg6wpcy/image/upload/c_fit,dpr_1.0,q_auto:eco,w_104/ecmbmawjx0kmvxlawiy1"
+                        />
+                        <input
+                        type="radio"
+                        name="bodytype"
+                        id="mezomorph"
+                        class="radio-form-control"
+                        /> Mezomorph
+                    </label>
+                    <label class="bodytype-label" id="radio-label" for="endomorph" oninput="bgClrFunc('body-type')">
+                        <img
+                        src="https://res.cloudinary.com/drhg6wpcy/image/upload/c_fit,dpr_1.0,q_auto:eco,w_104/rbgphfzdtcyk5zxv08j8"
+                        />
+                        <input
+                        type="radio"
+                        name="bodytype"
+                        id="endomorph"
+                        class="radio-form-control"
+                        /> Endomorph
+                    </label>
+                </div>
+
+                <!-- Bodytype goal radio -->
+                <p class="radio-p">Choose the body type you want</p>
+                <div class="form-group-radio" id="goal-bodytype">
+                    
+                    <label class="bodytype-goal-label" id="radio-label" for="cut-type" oninput="bgClrFunc('goal-bodytype')">
+                        <img
+                        src="https://res.cloudinary.com/drhg6wpcy/image/upload/c_fit,dpr_1.0,q_auto:eco,w_104/aznjmbjj2f1swidmjmg0"
+                        />
+                        <input
+                        type="radio"
+                        name="goal"
+                        id="cut-type"
+                        class="radio-form-control"
+                        required
+                        /> Cut
+                    </label>
+                    <label class="bodytype-goal-label" id="radio-label" for="bulk-type" oninput="bgClrFunc('goal-bodytype')">
+                        <img
+                        src="https://res.cloudinary.com/drhg6wpcy/image/upload/c_fit,dpr_1.0,q_auto:eco,w_104/kglaivzoo1cz12bhm6vf"
+                        />
+                        <input
+                        type="radio"
+                        name="goal"
+                        id="bulk-type"
+                        class="radio-form-control"
+                        /> Bulk
+                    </label>
+                    <label class="bodytype-goal-label" id="radio-label" for="extrabulk-type" oninput="bgClrFunc('goal-bodytype')">
+                        <img
+                        src="https://res.cloudinary.com/drhg6wpcy/image/upload/c_fit,dpr_1.0,q_auto:eco,w_104/wtczkbui4ab6swktnthv"
+                        />
+                        <input
+                        type="radio"
+                        name="goal"
+                        id="extrabulk-type"
+                        class="radio-form-control"
+                        /> Extra bulk
+                    </label>
+                </div>
+
+                <!-- Activity level radio -->
+                <p class="radio-p">What is your activity level?</p>
+                <div class="form-group-radio" id="level">
+                    
+                    <label class="activity" id="radio-label" for="active-lvl1" oninput="bgClrFunc('level')">
+                        <img
+                        src="https://res.cloudinary.com/drhg6wpcy/image/upload/c_fit,dpr_1.0,q_auto:eco,w_104/vtoziytnli0m05w3x2hc"
+                        />
+                        <input
+                        type="radio"
+                        name="active"
+                        id="active-lvl1"
+                        class="radio-form-control"
+                        required
+                        /> Low
+                    </label>
+                    <label class="activity" id="radio-label" for="active-lvl2" oninput="bgClrFunc('level')">
+                        <img
+                        src="https://res.cloudinary.com/drhg6wpcy/image/upload/c_fit,dpr_1.0,q_auto:eco,w_104/r4g91aas7uwentr0vudx"
+                        />
+                        <input
+                        type="radio"
+                        name="active"
+                        id="active-lvl2"
+                        class="radio-form-control"
+                        /> Mildly active
+                    </label>
+                    <label class="activity" id="radio-label" for="active-lvl3" oninput="bgClrFunc('level')">
+                        <img
+                        src="https://res.cloudinary.com/drhg6wpcy/image/upload/c_fit,dpr_1.0,q_auto:eco,w_104/ebrnzloft251u3oeb1g7"
+                        />
+                        <input
+                        type="radio"
+                        name="active"
+                        id="active-lvl3"
+                        class="radio-form-control"
+                        /> Moderately active
+                    </label>
+                    <label class="activity" id="radio-label" for="active-lvl4" oninput="bgClrFunc('level')">
+                        <img
+                        src="https://res.cloudinary.com/drhg6wpcy/image/upload/c_fit,dpr_1.0,q_auto:eco,w_104/jmtebunsfomqw6hloi9r"
+                        />
+                        <input
+                        type="radio"
+                        name="active"
+                        id="active-lvl4"
+                        class="radio-form-control"
+                        /> Very active
+                    </label>
+                    <label class="activity" id="radio-label" for="active-lvl5" oninput="bgClrFunc('level')">
+                        <img
+                        src="https://res.cloudinary.com/drhg6wpcy/image/upload/c_fit,dpr_1.0,q_auto:eco,w_104/vhmferzarvzcmptuedew"
+                        />
+                        <input
+                        type="radio"
+                        name="active"
+                        id="active-lvl5"
+                        class="radio-form-control"
+                        /> Extra active
+                    </label>
+                </div>
+
+                <!-- Sleep duration radio -->
+                <p class="radio-p">How much sleep do you get?</p>
+                <div class="form-group-radio" id="sleep-time">
+                    
+                    <label class="sleep-duration" id="radio-label" for="sleep-5" oninput="bgClrFunc('sleep-time')">
+                        <input 
+                        type="radio"
+                        name="sleep"
+                        id="sleep-5"
+                        class="radio-form-control"
+                        required
+                        /> Fewer than 5 hours
+                    </label>
+                    <label class="sleep-duration" id="radio-label" for="sleep-6" oninput="bgClrFunc('sleep-time')">
+                        <input 
+                        type="radio"
+                        name="sleep"
+                        id="sleep-6"
+                        class="radio-form-control"
+                        /> More than 6 hours
+                    </label>
+                    <label class="sleep-duration" id="radio-label" for="sleep-8" oninput="bgClrFunc('sleep-time')">
+                        <input 
+                        type="radio"
+                        name="sleep"
+                        id="sleep-8"
+                        class="radio-form-control"
+                        /> 8 hours and more
+                    </label>
+                </div>
+                
+                <!-- Submit button -->
+                <label class="submit-btn-label" for="submit" id="sub_btn">
+                    <input 
+                    type="submit"
+                    name="submit"
+                    value="Submit"
+                    id="submit"
+                    class="btn"
+                    />
+                </label>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p> The first online fitness website in Georgia </p>
+        <div class="contact" id="contact">
+            <ul class="contact-list">
+                <li> <i class="fa-solid fa-at"></i> Email</li>
+                <li> <i class="fa-brands fa-instagram"></i> Instagram</li>
+                <li> <i class="fa-brands fa-facebook"></i> Facebook</li>
+            </ul>
+        </div>
+        <p> &copy; Created by Ghibrasoft </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 70px;
+    height: 70px;
+}
+:root {
+    --bgcolor: rgb(30, 47, 47);
+    --shadow: rgb(255, 140, 0);
+    --borderclr: rgb(211, 211, 211);
+}
+html {
+    font-family: 'Ubuntu';
+}
+html::-webkit-scrollbar {
+    width: 1rem;
+    width: 7px;
+}
+html::-webkit-scrollbar-track {
+    background: rgba(211, 211, 211, 1);
+}
+html::-webkit-scrollbar-thumb {
+    background: rgb(255, 165, 0, 1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* ----- NAVIGATION BAR ----- */
+
+.header-div {
+    position: fixed;
+    width: 100%;
+}
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-bottom: 3px solid var(--borderclr); /* devide from welcome section */
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 30px 30px 20px rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+}
+.logo > img {
+    width: 35%;
+    height: 35%;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+.nav-list > li > a {
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+}
+.nav-list > li > a:hover {
+    box-shadow: 0 0 10px 5px var(--shadow);
+    transition: 0.3s;
+}
+
+/* ----- CONTAINER, FORM TITLE ----- */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.form-title {
+    margin-top: 150px;
+    text-align: center;
+}
+
+/* ----- INPUTS ----- */
+.input-text-group {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+.form-group-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 20px;
+}
+.form-group-input label {
+    position: absolute;
+    font-weight: lighter;
+    cursor: text;
+    top: 0;
+    left: 0;
+    transition: .3s ease;
+}
+.input-form-control {
+    height: 30px;
+    outline: none;
+    font-size: 100%;
+    border: none;
+    border-bottom: 2px solid gray;
+    transition: ease-out 0.3s;
+}
+.input-form-control:hover {
+    border-bottom: 2px solid lightgreen;
+    transition: 0.3s;
+}
+.input-form-control:focus ,
+.input-form-control:valid {
+    border-bottom: 2px solid lightgreen;
+    background-color: white;
+}
+.input-form-control:focus ~ label,
+.input-form-control:valid ~ label {
+    color: lightgreen;
+    font-size: 1rem;
+    font-style: italic;
+    transform: translateY(-1rem);
+    transition: .3s ease;
+}
+
+/* ----- RADIOS ----- */
+.radio-group {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.radio-p {
+    font-weight: bold;
+}
+.form-group-radio {
+    margin: 5px 0 30px 0;
+    display: flex;
+    width: 40%;
+    border-bottom: 1px solid gray;
+}
+#radio-label {
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* ----- SUBMIT BUTTON ----- */
+.btn {
+    width: 550px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: var(--shadow);
+    transition: ease-out 0.3s;
+}
+.btn:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 0 10px 7px lightgreen; 
+}
+.btn:active {
+    background-color: #0dc535;
+    color: white;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 30px;
+    border-top: 3px solid var(--borderclr);
+}
+.contact-list {
+    list-style: none;
+    display: flex;
+}
+.contact-list > li {
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+.contact-list > li:hover {
+    box-shadow: 0 0 10px 5px var(--shadow);
+    transition: 0.3s;
+}
