@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome page</title>
+
+        <link rel="stylesheet" href="Welcome-style.css">
+        <script src="https://kit.fontawesome.com/5dc700b45c.js" crossorigin="anonymous"></script>
+        <script src="Welcome-Jscript.js" defer></script>
+    </head>
+
+    <body>
+        <!-- HEADER AND NAVIGATION -->        
+        <div class="header-div">
+            <header id="header">
+                <a href="file:///D:/WEB_PROGRAMMING/Portfolio/images/fit-online.jpg">
+                    <div class="logo">
+                        <img src="images/fit-online.jpg" alt="fitness online">
+                    </div>
+                </a>
+                <nav id="nav-bar">
+                    <ul class="nav-list">
+                        <li><a class="nav-link" href="file:///D:/WEB_PROGRAMMING/Bitcamping/PTraining%20online%20platform/about-me.html" target="_blank">About</a></li>
+                        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <!-- FEATURES SECTION -->
+        <section id="features">
+
+            <div class="form-title">
+                <h2>Let's create your body profile</h2>
+                <p>Choose your gender</p>
+            </div>
+
+            <form id="gender-form">
+                <div class="male-div">
+                    <label id="male-label" onclick="genderChoose(event, 'male')" for="male">
+                        <img src="images/male.png" alt="male logo">
+                        <input
+                        type="radio"
+                        name="gender"
+                        id="male"
+                        class="gender-radio"
+                        />Male
+                    </label>
+                </div>
+                <div class="female-div">
+                    <label id="female-label" onclick="genderChoose(event, 'female')" for="female">
+                        <img src="images/female.png" alt="female logo"> 
+                        <input
+                        type="radio"
+                        name="gender"
+                        id="female"
+                        class="gender-radio"
+                        />Female
+                    </label>
+                </div>
+            </form>
+        </section>
+
+        <h2><i class="far fa-hand-point-down"></i> 
+            We offer you individual 
+            <i class="far fa-hand-point-down"></i></h2>
+        <!-- PRICING SECTION -->
+        <section id="pricing">
+            <div class="product">
+                <div class="price-title"><i class="fas fa-utensils"></i> Diet plan</div>
+                <h2>75$</h2>
+                <ul>
+                    <li>Get mass</li>
+                    <li>Lose weight</li>
+                    <li>For treatment</li>
+                    <li>For competition preparing</li>
+                    <li>Just keep current body shape</li>
+                </ul>
+                <a href="file:///D:/WEB_PROGRAMMING/Bitcamping/PTraining%20online%20platform/profile-survey.html" target="_blank">
+                    <input 
+                    type="submit"
+                    value="Get started"
+                    id="submit"
+                    class="btn"
+                    />
+                </a>
+            </div>
+
+            <div class="product">
+                <div class="price-title"><i class="fas fa-dumbbell"></i> Exercise plan</div>
+                <h2>75$</h2>
+                <ul>
+                    <li>Get mass</li>
+                    <li>Lose weight</li>
+                    <li>For treatment</li>
+                    <li>For competition preparing</li>
+                    <li>Just keep current body shape</li>
+                </ul>
+                <a href="file:///D:/WEB_PROGRAMMING/Bitcamping/PTraining%20online%20platform/profile-survey.html" target="_blank">
+                    <input 
+                    type="submit"
+                    value="Get started"
+                    id="submit"
+                    class="btn"
+                    />
+                </a>
+            </div>
+
+            <div class="product">
+                <div class="price-title"><i class="fas fa-utensils"></i><i class="fas fa-dumbbell"></i> Diet and Exercise plans</div>
+                <h2>100$</h2>
+                <ul>
+                    <li>Get mass</li>
+                    <li>Lose weight</li>
+                    <li>For treatment</li>
+                    <li>For competition preparing</li>
+                    <li>Just keep current body shape</li>
+                </ul>
+                <a href="file:///D:/WEB_PROGRAMMING/Bitcamping/PTraining%20online%20platform/profile-survey.html" target="_blank">
+                    <input 
+                    type="submit"
+                    value="Get started"
+                    id="submit"
+                    class="btn"
+                    />
+                </a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p> The first online fitness website in Georgia </p>
+            <div class="contact" id="contact">
+                <ul class="contact-list">
+                    <li> <i class="fa-solid fa-at"></i> Email</li>
+                    <li> <i class="fa-brands fa-instagram"></i> Instagram</li>
+                    <li> <i class="fa-brands fa-facebook"></i> Facebook</li>
+                </ul>
+            </div>
+            <p> &copy; Created by Ghibrasoft </p>
+        </footer>
+
+    </body>
+</html>
